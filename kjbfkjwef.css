@@ -1,3 +1,14 @@
+.everything{
+    display: grid;
+    grid-template-columns: 290px 280px 280px 300px;
+    grid-template-rows: 450px 280px 300px;
+    row-gap: 10px;
+    column-gap: 10px;
+    min-height: 300px;
+}
+
+
+
 .quicker{
     color: hsl(256, 67%, 59%);
 }
@@ -14,11 +25,14 @@ p{
 .schedule{
     background-color: hsl(31, 66%, 93%);
     width: 250px;
+    height: 290px;
     padding: 20px;
     padding-top: 50px;
     padding-bottom: 100px;
     border-radius: 10px;
 }
+
+
 
 .schedule h1{
     font-size: 40px;
@@ -46,11 +60,14 @@ p{
     background-color: hsl(39, 100%, 71%);
     width: fit-content;
     padding: 20px;
+    height: 485px;
     border-radius: 10px;
+    grid-row-start: 2;
+    grid-row-end:4;
 }
 
 .stars h1{
-    font-size: 80px;
+    font-size: 60px;
     letter-spacing: -3px;
     margin: 0;
     padding-bottom: 20px;
@@ -72,12 +89,14 @@ p{
     flex-direction: column;
     align-items: center;
     background-color: hsl(256, 67%, 59%);
-    width: fit-content;
+    width: 470px;
+    height: 320px;
     padding: 20px;
     padding-left:50px ;
     padding-right: 50px;
     border-radius: 10px;
-    
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 .faster{
@@ -95,23 +114,26 @@ p{
 }
 
 .manage h1{
-    line-height: 40px;
-    font-size: 45px;
+    line-height: 30px;
+    font-size: 35px;
     letter-spacing: -3px;
 }
 
 .manage{
     background-color:white ;
-    width: 300px;
+    width: 240px;
+    height: 240px;
     padding: 20px;
     border-radius: 10px;
     overflow: hidden;
+    grid-column-start: 2;
+
 }
 
 .consist{
     background-color: hsl(39, 100%, 71%);
     width: 250px;
-    height: 300px;
+    height: 240px;
     padding: 20px;
     overflow: hidden;
     border-radius: 10px;
@@ -125,6 +147,8 @@ p{
     line-height: 40px;
     font-size: 45px;
     letter-spacing: -3px;
+    margin: 0;
+    padding: 5px;
 }
 
 .growth h1{
@@ -134,7 +158,7 @@ p{
 
 .growth p{
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .growth img{
@@ -144,45 +168,61 @@ p{
 .growth{
     background-color: white;
     width: fit-content;
+    height:200px ;
     padding: 20px;
     padding-right: 50px;
     border-radius: 10px;
+    grid-row-start: 3;
+    grid-column-start:2;
 }
 
 .content{
     display: flex;
     align-items: center;
     background-color: hsl(256, 67%, 59%);
-    width: fit-content;
+    width: 550px;
+    height: 200px;
     padding: 20px;
     border-radius: 10px;
+    grid-column-start: 3;
+    grid-column-end: 5;
 }
 
-content img{
-    width: 200px;
+.content img{
+    width: 250px;
 }
 
 .content h1{
-    font-size: 60px;
+    font-size: 50px;
     color: white;
-    line-height: 50px;
+    line-height: 35px;
     letter-spacing: -3px;
 }
 
 .media h1{
-    line-height: 40x;
+    line-height: 30px;
     font-size: 40px;
     letter-spacing: -3px;
+
 }
 
 .media{
     background-color: hsl(254, 88%, 90%);
     width: 250px;
+    height: 600px;
     overflow: hidden;
     padding: 20px;
     border-radius: 10px;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .media img{
     width: 400px;
+}
+
+div{
+    height: 100%;
+    width: 100%;
 }
