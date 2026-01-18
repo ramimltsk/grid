@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "DM Sans", sans-serif;
+    background-color: rgb(243, 243, 243);
+}
+
+.everything {
+    display: grid;
+    grid-template-columns: 220px 250px 250px 270px;
+    grid-template-rows: 150px 150px 90px 140px 200px;
+    gap: 20px;
+    grid-template-areas:
+        "box1 box2 box2 box3"
+        "box1 box2 box2 box3"
+        "box1 box5 box6 box3"
+        "box4 box5 box6 box3"
+        "box4 box7 box8 box8";
+}
+
+.box {
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.box1 {
+    grid-area: box1;
+    background-color: hsl(31, 66%, 93%);
+    padding: 20px;
+}
+
+.box2 {
+    grid-area: box2;
+    background-color: hsl(256, 67%, 59%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box3 {
+    grid-area: box3;
+    background-color: hsl(254, 88%, 90%);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.box4 {
+    grid-area: box4;
+    background-color: hsl(39, 100%, 71%);
+    padding: 20px;
+}
+
+.box5 {
+    grid-area: box5;
+    background-color: white;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.box6 {
+    grid-area: box6;
+    background-color: hsl(39, 100%, 71%);
+    padding-top: 10px;
+}
+
+.box7 {
+    grid-area: box7;
+    background-color: white;
+}
+
+.box8 {
+    grid-area: box8;
+    background-color: hsl(256, 67%, 59%);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.box1 img {
+    width: 180px;
+}
+
+.box1 span {
+    color: hsl(256, 67%, 59%);
+    font-style: oblique;
+}
+
+.box2 h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+.box2 img {
+    width: 150px;
+
+}
+
+.box3 img {
+    width: 320px;
+}
+
+.box3 h1 {
+    font-size: 28px;
+}
+
+.box4 h1 {
+    font-size: 35px;
+    margin: 0;
+}
+
+.box4 img {
+    width: 180px;
+}
+
+.box5 img {
+    width: 300px;
+}
+
+.box5 h1 {
+    font-size: 33px;
+    line-height: 30px;
+}
+
+.box6 h1 {
+    line-height: 30px;
+}
+
+.box6 img {
+    width: 200px;
+}
+
+.box7 h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.box7 p {
+    margin-top: 0;
+}
+
+.box7 img {
+    width: 150px;
+}
+
+.box8 img {
+    width: 180px;
+}
+
+.box8 h1 {
+    font-size: 36px;
+    color: white;
+}
